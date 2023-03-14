@@ -14,16 +14,11 @@ public class prob_03_02 {
         System.out.println("       Welcome To Shopping Mall");
         System.out.println("        Welcome To BookMarket");
         System.out.println("***************************************");
-        System.out.printf("%-17s", "1. 고객 정보 확인");
-        System.out.printf("%-17s\n", "2. 장바구니 상품 목록 보기");
-        System.out.printf("%-17s", "3. 장바구니 비우기");
-        System.out.printf("%-17s\n", "4. 바구니에 항목 추가하기");
 
-        System.out.printf("%-17s", "5. 장바구니 수정하기");
-        System.out.printf("%-17s\n", "6. 장바구니 삭제하기");
-
-        System.out.printf("%-17s", "7. 영수증 표시하기");
-        System.out.printf("%-17s\n", "8. 종료");
+        System.out.printf("1. 고객 정보 확인\t\t2. 장바구니 상품 목록 보기\n");
+        System.out.printf("3. 장바구니 비우기\t\t4. 바구니에 항목 추가하기\n");
+        System.out.printf("5. 장바구니 수정하기\t\t6. 장바구니 삭제하기\n");
+        System.out.println("7. 영수증 표시하기\t\t8. 종료\n");
 
         System.out.println();
         System.out.print("메뉴 번호 선택 : ");
