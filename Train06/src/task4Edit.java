@@ -19,7 +19,9 @@ public class task4Edit {
 
             player.printInfo();
             enemy.printInfo();
+
             System.out.println();
+
             attacker.damaged(attacker.roll());
             attacker.attack(defender); // 공격자가 공격했다는 메시지를 띄운다.
             enemy.damaged(enemy.roll());
