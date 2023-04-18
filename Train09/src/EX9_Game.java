@@ -125,9 +125,7 @@ class Warrior extends Character9 {
         Character9 enemy = enemy_players.get(enemy_index);
 
         // attack the enemy
-        int damage = roll();
-        System.out.println(name + "이(가) " + enemy.getName() + "을(를) " + damage + "의 피해로 공격했습니다!");
-        enemy.damaged(damage);
+        attack(enemy);
     }
 }
 
@@ -147,9 +145,7 @@ class Archer extends Character9 {
         }
 
         // Attack the enemy with the lowest physical strength
-        int damage = roll();
-        System.out.println(name + "이(가) " + lowest_strength_enemy.getName() + "을(를) " + damage + "의 피해로 공격했습니다!");
-        lowest_strength_enemy.damaged(damage);
+        attack(lowest_strength_enemy);
     }
 }
 
@@ -165,12 +161,10 @@ class Magician extends Character9 {
         ArrayList<Character9> enemyPlayers = enemy_team.getCharacterList();
 
         // calculate damage for the attack
-        int damage = roll();
 
         // attack each enemy character in turn
         for (Character9 enemy : enemyPlayers) {
-            System.out.println(name + "이(가) " + enemy.getName() + "에게 " + damage + "의 피해로 공격했습니다!");
-            enemy.damaged(damage);
+            attack(enemy);
         }
     }
 }
